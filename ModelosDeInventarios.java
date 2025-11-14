@@ -3,15 +3,17 @@ public class ModelosDeInvetarios {
     public static void main(String[] args) {
         Scanner Sol=new Scanner(System.in);
         System.in.println("Ingresa tu demanda (D): ");
-        int demanda=Sol.nextInt();
+        double demanda=Sol.nextInt();
         System.in.println("Ingresa tu precio pedido (K): ");
-        pedido=Sol.nextInt();
+        double pedido=Sol.nextInt();
         System.out.printn("Ingresa tu costo de almacenamiento (H): ");
-        h=Sol.nextInt();
+        double h=Sol.nextInt();
         System.out.println("Ingrese los dias en el que recibira el producto (L): ")
-        L=Sol.nextInt();
+        int L=Sol.nextInt();
         double y*=Math.sqrt((2*demanda*pedido)/h);
-        System.out.println("y* = " + y*)
+        double to=(y*/demanda);
+        System.out.println("La cantidad del pedido es (y*): " + y*);
+        System.out.println("La duracion del ciclo (to): " + (to));
     }
 }
 
