@@ -52,11 +52,20 @@ public class ModelosDeInvetarios {
                             break;
                         case 3:
                             System.out.println("Ingresa el primer costo unitario (C): ");
-                            double c1=Sol.nextDouble();
+                            double c01=Sol.nextDouble();
                             System.out.println("Ingresa el segundo costo unitario (C): ");
-                            double c2=Sol.nextDouble();
+                            double c02=Sol.nextDouble();
                             System.out.println("Ingresa el tercer costo unitario (C): ");
-                            double c3=Sol.nextDouble();
+                            double c03=Sol.nextDouble();
+                            System.in.println("Ingresa el descuento: ");
+                            double i=Sol.nexyDouble();
+                            double h1=c01*i/100;
+                            double h2=c02*i/100;
+                            double h3=c03*i/100;
+                            double y=Math.sqrt((2*d*k)/h1);
+                            double y=Math.sqrt((2*d*k)/h2);
+                            double y=Math.sqrt((2*d*k)/h3);
+                            System.out. println("Los costos de almacenamiento con descuento aplicado son: " + h1 + ", " + h2 + ", " + h3);
                             break;
                     }
             }
