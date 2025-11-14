@@ -62,10 +62,26 @@ public class ModelosDeInvetarios {
                             double h1=c01*i/100;
                             double h2=c02*i/100;
                             double h3=c03*i/100;
-                            double y=Math.sqrt((2*d*k)/h1);
-                            double y=Math.sqrt((2*d*k)/h2);
-                            double y=Math.sqrt((2*d*k)/h3);
+                            double y1=Math.sqrt((2*d*k)/h1);
+                            double y2=Math.sqrt((2*d*k)/h2);
+                            double y3=Math.sqrt((2*d*k)/h3);
                             System.out. println("Los costos de almacenamiento con descuento aplicado son: " + h1 + ", " + h2 + ", " + h3);
+                            double CC1=d*c01;
+                            double CC2=d*c02;
+                            double CC3=d*c03;
+                            System.out.println("Los costos de compra son: " + CC1 ", " + CC2 + ", " + CC3);
+                            double CO1=(d*k)/y1;
+                            double CO2=(d*k)/y2;
+                            double CO3=(d*k)/y3;
+                            System.out.println("Los costos de ordenamiento son: " + CO1 + ", " + CO2 ", " + CO3);
+                            double CM1=(h1*y1)/2;
+                            double CM2=(h2*y2)/2
+                            double CM3=(h3*y3)/2;
+                            System.out.println("Los costos de mantenimiento son: " + CM1 + ", " + CM2 ", " + CM3);
+                            double CTU1=CC1+C01+CM1;
+                            double CTU1=CC2+C02+CM2;
+                            double CTU1=CC3+C03+CM3;
+                            System.out.println("Los CTU son: " + CTU1 + ", " + CTU2 + ", " + CTU3);
                             break;
                     }
             }
